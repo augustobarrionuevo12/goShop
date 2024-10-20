@@ -1,0 +1,20 @@
+{
+  "name": "mi-mercado",
+  "version": "1.0.0",
+  "description": "Marketplace",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "mongodb": "^6.9.0",
+    "mongoose": "^6.7.0",
+    "mongoose-paginate-v2": "^1.8.5",
+    "multer": "^1.4.5-lts.1"
+  }
+}

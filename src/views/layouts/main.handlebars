@@ -1,0 +1,32 @@
+<!-- src/views/layouts/main.handlebars -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  {{> navbar}}
+  <section class="banner">
+    {{!-- <h1>¡Bienvenido a Nuestra Tienda!</h1> --}}
+  </section>
+  {{{body}}}
+  <footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 Go Shop. Todos los derechos reservados.</p>
+    <ul class="footer-links">
+      <li><a href="https://youtube.com/shorts/JI4IWtNDgIg?si=lamdtkM2E29jlrgk">Términos y condiciones</a></li>
+      <li><a href="https://youtube.com/shorts/JI4IWtNDgIg?si=lamdtkM2E29jlrgk">Política de privacidad</a></li>
+      <li><a href="https://youtube.com/shorts/JI4IWtNDgIg?si=lamdtkM2E29jlrgk">Contacto</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="https://github.com" target="_blank"><img src="/images/bxl-github.svg" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="/images/bxl-instagram-alt.svg" alt="Instagram"></a>
+    </div>
+  </div>
+</footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>

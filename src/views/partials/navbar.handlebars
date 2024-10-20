@@ -1,0 +1,15 @@
+<!-- src/views/partials/navbar.handlebars -->
+<nav>
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/products">Comprar</a></li>
+    <li><a href="/sell">Vender</a></li>
+    <li><a href="/cart">Carrito</a></li>
+    <li>
+      <form action="/products" method="GET">
+        <input type="text" name="query" placeholder="Buscar productos...">
+        <button type="submit">Buscar</button>
+      </form>
+    </li>
+  </ul>
+</nav>

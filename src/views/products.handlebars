@@ -1,0 +1,24 @@
+<h1>Productos Disponibles</h1>
+<div class="instrucciones-container">
+  <p class="instrucciones">Aquí puedes ver todos los productos disponibles. Haz clic en "Agregar al carrito" para comprar.</p>
+</div>
+
+<div class="product-list">
+  {{#if products.length}} <!-- Verifica si hay productos -->
+    {{#each products}}
+      <div class="product-item">
+        <h2>{{this.title}}</h2>
+        <img src="{{this.image}}" alt="{{this.title}}" class="product-image"> <!-- Mostrar imagen usando el link -->
+        <p>{{this.description}}</p>
+        <p>Precio: ${{this.price}}</p>
+        <p>Categoría: {{this.category}}</p>
+        <p>Marca: {{this.brand}}</p> <!-- Mostrar la marca del producto -->
+        
+        <!-- Reemplazar el formulario con un botón para agregar al carrito usando JS -->
+        <button class="add-to-cart-btn" data-product-id="{{this._id}}">Agregar al carrito</button>
+      </div>
+    {{/each}}
+  {{else}}
+    <p>No hay productos disponibles.</p>
+  {{/if}}
+</div>
